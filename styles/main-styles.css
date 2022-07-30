@@ -1,8 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap");
+:root {
+  --bg-white-1: #fdf9ff;
+  --bg-white-2: #f2f2fc;
+  --bg-white-3: #e8dfec;
+  --text-violet-1: #302e4d;
+  --text-violet-2: #504e70;
+  --border-red: #ec1839;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-size: 16px;
   line-height: 1.5;
+  font-family: "Poppins", sans-serif;
 }
 
 * {
@@ -14,4 +25,77 @@ body {
 ::before,
 ::after {
   box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+.side-panel {
+  background: var(--bg-white-1);
+  width: 270px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  height: 100%;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.side-panel .logo {
+  font-size: 30px;
+  position: absolute;
+  top: 50px;
+  text-transform: capitalize;
+}
+
+.side-panel .logo a {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  color: var(--text-violet-1);
+  padding: 15px;
+  position: relative;
+}
+
+.side-panel .logo a span {
+  font-size: 40px;
+  font-family: "Clicker Script", cursive;
+}
+
+.side-panel .logo a::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-top: 5px solid var(--border-red);
+  border-right: 5px solid var(--border-red);
+}
+
+.side-panel .logo a::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-bottom: 5px solid var(--border-red);
+  border-left: 5px solid var(--border-red);
+}
+
+.section {
+  background: var(--bg-white-2);
+  min-height: 100vh;
+  opacity: 1;
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 280px;
+  z-index: 0;
 }
