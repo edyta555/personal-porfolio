@@ -5,7 +5,7 @@
   --bg-white-3: #e8dfec;
   --text-violet-1: #302e4d;
   --text-violet-2: #504e70;
-  --border-red: #ec1839;
+  --red-1: #ec1839;
 }
 
 body {
@@ -43,6 +43,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-right: 1px solid var(--bg-white-3);
 }
 
 .side-panel .logo {
@@ -57,7 +58,7 @@ ul {
   font-weight: 700;
   letter-spacing: 5px;
   color: var(--text-violet-1);
-  padding: 15px;
+  padding: 15px 20px;
   position: relative;
 }
 
@@ -73,8 +74,8 @@ ul {
   content: "";
   width: 25px;
   height: 25px;
-  border-top: 5px solid var(--border-red);
-  border-right: 5px solid var(--border-red);
+  border-top: 5px solid var(--red-1);
+  border-right: 5px solid var(--red-1);
 }
 
 .side-panel .logo a::after {
@@ -84,8 +85,34 @@ ul {
   content: "";
   width: 25px;
   height: 25px;
-  border-bottom: 5px solid var(--border-red);
-  border-left: 5px solid var(--border-red);
+  border-bottom: 5px solid var(--red-1);
+  border-left: 5px solid var(--red-1);
+}
+
+.navigation {
+  margin-top: 60px;
+}
+
+.navigation li {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.navigation li a {
+  color: var(--text-violet-1);
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-bottom: 1px solid var(--bg-white-3);
+}
+
+.navigation li a.active-tab {
+  color: var(--red-1);
+}
+
+.navigation li a i {
+  margin-right: 12px;
 }
 
 .section {
