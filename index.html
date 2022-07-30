@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>POrfolio</title>
-    <link rel="stylesheeet" href="styles/main-styles.css" />
+    <title>Porfolio</title>
+    <link rel="stylesheet" href="styles/main-styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
@@ -13,7 +13,54 @@
   </head>
   <body>
     <!--  Content -->
-
+    <div class="outer-container">
+      <div class="side-panel">
+        <div class="logo">
+          <a href="" #><span>C</span>oder</a>
+        </div>
+        <ul class="navigation">
+          <li>
+            <a href="#" class="active-tab"><i class="fa fa-house-chimney"></i>Home</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-user"></i>About</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-list"></i>Services</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-briefcase"></i>Porfolio</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-comments"></i>Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-content">
+        <section class="home section">
+          <div class="container">
+            <div class="row">
+              <div class="general-info side-padd-15">
+                <h3 class="hello-text">
+                  Hi, my name is <span class="full-name">Edyta Badowska</span>
+                </h3>
+                <h3 class="about-me">
+                  I'm a <span class="profession">full-stack developer</span>
+                </h3>
+                <p class="my-description">
+                  I'm a full-stack developer mainly using React.js and Python. I
+                  am interested in medicine and bioinformatics.
+                </p>
+                <a href="#" class="btn contact">Contact me</a>
+              </div>
+              <div class="my-photo side-padd-15">
+                <img src="images/my-photo.jpg" alt="My photo" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
     <!-- JS Files -->
     <script src="js/script.js"></script>
   </body>
